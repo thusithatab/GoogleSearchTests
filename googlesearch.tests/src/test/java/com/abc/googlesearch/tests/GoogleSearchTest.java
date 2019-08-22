@@ -21,6 +21,12 @@ import utils.Log;
 
 public class GoogleSearchTest extends BaseTest {
 
+	/**
+	 * 
+	 * @throws Exception 
+	 * set the excel sheet
+	 * 
+	 */
 	@BeforeTest
 	public void setupTestData() throws Exception {
 		try {
@@ -30,6 +36,12 @@ public class GoogleSearchTest extends BaseTest {
 		}
 	}
 
+	/**
+	 * 
+	 * @throws Exception
+	 * google search test
+	 * 
+	 */
 	@Test
 	public static void googleSearch() throws Exception {
 

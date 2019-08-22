@@ -41,7 +41,12 @@ public class BaseTest {
 	static WebDriver driver;
 	
 
-	
+	/**
+	 * 
+	 * @throws Exception
+	 * setup method will set the baseURL and the browser from the config file
+	 * 
+	 */
 	@BeforeClass
 	public void setup() throws Exception {
 		try {
@@ -89,12 +94,18 @@ public class BaseTest {
 		}
 	}
 
+	/**
+	 * 
+	 * @throws Exception
+	 * quit the web driver after execution
+	 * 
+	 */
 	@AfterClass
 	public void tearDown() throws Exception {
 		try {
 			if (null != driver) {
 				Log.endLog("Ending the test!");
-				driver.close();
+				
 				driver.quit();
 			}
 		} catch (Exception e) {
